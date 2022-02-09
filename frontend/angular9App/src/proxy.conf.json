@@ -1,0 +1,15 @@
+{
+    "/pais": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    },
+    
+    "/index/*": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}

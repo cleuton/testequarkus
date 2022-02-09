@@ -1,0 +1,17 @@
+<div >
+    <h1>{{ pais.name }}</h1>
+    <table border>
+        <tr><th>Ano</th><th>Índice</th></tr>
+        <div *ngFor="let indice of indices">
+            <tr>
+                <td align="center">
+                    {{ indice.date}}
+                </td>
+                <td align="center">
+                    {{ indice.value != null ? indice.value : "não informado" }}
+                </td>
+            </tr>
+        </div>
+    </table>
+    <button (click)="voltar()">Voltar</button>
+</div>

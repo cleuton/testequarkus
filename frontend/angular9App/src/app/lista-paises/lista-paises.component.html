@@ -1,0 +1,10 @@
+<div *ngFor="let pais of paises">
+    <div>
+        <p>
+            <a routerLink="/indices" routerLinkActive="active"
+                [state]="pais">
+            {{ pais.name }}
+            </a>
+        </p>
+    </div>
+</div>
