@@ -1,0 +1,13 @@
+services:
+  frontend:
+    build:
+        context: /home/cleuton/Documentos/projetos/desafiobb/frontend/angular9App
+        dockerfile: /home/cleuton/Documentos/projetos/desafiobb/frontend/angular9App/Dockerfile
+    ports:
+        - "80:80"
+  backend:
+    build:
+        context: /home/cleuton/Documentos/projetos/desafiobb/wbindex
+        dockerfile: /home/cleuton/Documentos/projetos/desafiobb/wbindex/Dockerfile
+    ports:
+        - "8080:8080"
